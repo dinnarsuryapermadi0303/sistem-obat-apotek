@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+/* ===========================
+   ADMIN THEME
+=========================== */
+
+:root{
+
+    --primary:#2563eb;
+
+    --secondary:#10b981;
+
+    --dark:#0f172a;
+
+    --body:#f8fafc;
+
+    --card:#ffffff;
+
+}
+
+body{
+
+    background:var(--body);
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+/* NAVBAR */
+
+.admin-navbar{
+
+    background:linear-gradient(
+        90deg,
+        #0f172a,
+        #1e3a8a
+    );
+
+    box-shadow:0 8px 25px rgba(0,0,0,.1);
+
+}
+
+.admin-navbar .navbar-brand{
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.admin-navbar .nav-link{
+
+    color:#fff;
+
+    margin:0 8px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.admin-navbar .nav-link:hover{
+
+    background:rgba(255,255,255,.12);
+
+}
+
+.admin-navbar .active{
+
+    background:#2563eb;
+
+}
+
+/* CONTENT */
+
+.admin-content{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    padding:30px;
+
+}
+
+/* CARD */
+
+.admin-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    border:none;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.admin-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* BUTTON */
+
+.btn{
+
+    border-radius:10px;
+
+}
+
+/* FORM */
+
+.form-control,
+
+.form-select{
+
+    border-radius:10px;
+
+    border:1px solid #dbe3ea;
+
+}
+
+.form-control:focus,
+
+.form-select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 .2rem rgba(37,99,235,.15);
+
+}
+
+/* TABLE */
+
+.table{
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+.table thead{
+
+    background:#2563eb;
+
+    color:#fff;
+
+}
+
+/* ALERT */
+
+.alert{
+
+    border:none;
+
+    border-radius:12px;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    text-align:center;
+
+    padding:20px;
+
+    color:#64748b;
+
+}

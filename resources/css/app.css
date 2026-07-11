@@ -1,0 +1,226 @@
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans:
+        "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #f5f6fa;
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+}
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
+
+.main-content {
+    padding-top: 120px;
+
+    padding-bottom: 20px;
+
+    min-height: calc(100vh - 180px);
+}
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.container {
+    max-width: 1400px;
+}
+
+/* =====================================================
+   REKOMENDASI
+===================================================== */
+
+.rekomendasi-wrapper {
+    margin-top: 15px;
+
+    margin-bottom: 20px;
+}
+
+.hasil-wrapper {
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.card {
+    border: none;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/* =====================================================
+   GLASS BOX
+===================================================== */
+
+.glass-box {
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.form-control {
+    border-radius: 12px;
+
+    min-height: 52px;
+}
+
+.form-control:focus {
+    border-color: #2c7be5;
+
+    box-shadow: none;
+}
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.btn {
+    border-radius: 12px;
+
+    transition: 0.3s;
+
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #2c7be5;
+
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #1d5fc4;
+}
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.card img {
+    object-fit: cover;
+}
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.table {
+    vertical-align: middle;
+}
+
+/* =====================================================
+   ALERT
+===================================================== */
+
+.alert {
+    border: none;
+
+    border-radius: 12px;
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    background: #0f172a;
+
+    color: white;
+
+    margin-top: 25px !important;
+
+    padding: 35px 0;
+}
+
+footer a {
+    color: white;
+
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #60a5fa;
+}
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+.fade-up {
+    opacity: 0;
+
+    transform: translateY(25px);
+
+    transition: 0.5s;
+}
+
+.fade-up.show {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 992px) {
+    .main-content {
+        padding-top: 110px;
+    }
+
+    .glass-box {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+
+        padding-right: 15px;
+    }
+
+    .main-content {
+        padding-top: 100px;
+    }
+}

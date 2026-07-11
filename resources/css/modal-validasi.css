@@ -1,0 +1,259 @@
+/* Modal Detail Obat - Validation Page */
+
+/* Modal Dialog Styling */
+.modal-lg {
+    max-width: 800px;
+}
+
+#detailObatModal .modal-content {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    border: none;
+}
+
+#detailObatModal .modal-header {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border: none;
+    border-radius: 1rem 1rem 0 0;
+    padding: 1.5rem;
+}
+
+#detailObatModal .modal-header .modal-title {
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+}
+
+#detailObatModal .modal-body {
+    background-color: #f8f9fa;
+    padding: 2rem;
+}
+
+/* Header dengan Icon */
+#modalKategoriHeader {
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#modalKategoriHeader:hover {
+    transform: translateY(-2px);
+}
+
+#modalKategoriHeader i {
+    animation: fadeInScale 0.6s ease-out;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#modalKategoriHeader .fw-semibold {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Detail Cards */
+#detailObatModal .row > div {
+    transition: all 0.3s ease;
+}
+
+#detailObatModal .row > div:hover h6 {
+    color: #0056b3 !important;
+}
+
+/* Section Headers */
+#detailObatModal h6 {
+    color: #0056b3;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+#detailObatModal h6 i {
+    font-size: 1.1rem;
+}
+
+/* Detail Text */
+#detailObatModal .text-secondary {
+    color: #495057 !important;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Special Info Boxes */
+.bg-light {
+    background-color: #f0f4f8 !important;
+    border-left: 4px solid #007bff;
+}
+
+.bg-info.bg-opacity-10 {
+    background-color: #e7f1ff !important;
+    border-left: 4px solid #0dcaf0;
+}
+
+/* Score Badges */
+#detailObatModal .badge {
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+#detailObatModal .badge:hover {
+    transform: scale(1.05);
+}
+
+/* Progress Bar Styling */
+#detailObatModal .progress {
+    background-color: #e9ecef;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#detailObatModal .progress-bar {
+    background: linear-gradient(90deg, #17a2b8 0%, #20c997 100%);
+    transition: width 0.6s ease;
+    font-weight: 600;
+}
+
+/* Modal Footer */
+#detailObatModal .modal-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    padding: 1.5rem;
+}
+
+#detailObatModal .btn-secondary,
+#detailObatModal .btn-success {
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 0.625rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+#detailObatModal .btn-secondary:hover {
+    background-color: #6c757d;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
+}
+
+#detailObatModal .btn-success {
+    background: linear-gradient(135deg, #198754 0%, #157347 100%);
+    border: none;
+}
+
+#detailObatModal .btn-success:hover {
+    background: linear-gradient(135deg, #157347 0%, #0f5132 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(25, 135, 84, 0.4);
+}
+
+/* Fade in animation untuk modal */
+#detailObatModal.fade {
+    opacity: 0;
+}
+
+#detailObatModal.show {
+    opacity: 1;
+}
+
+#detailObatModal .modal-dialog {
+    animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #detailObatModal .modal-lg {
+        max-width: 100%;
+    }
+
+    #detailObatModal .modal-body {
+        padding: 1.5rem;
+    }
+
+    #detailObatModal .modal-header {
+        padding: 1rem;
+    }
+
+    #detailObatModal .modal-title {
+        font-size: 1.1rem;
+    }
+
+    #modalKategoriHeader {
+        min-height: 200px !important;
+    }
+
+    #detailObatModal h6 {
+        font-size: 0.9rem;
+    }
+
+    #detailObatModal .text-secondary {
+        font-size: 0.85rem;
+    }
+}
+
+/* Button Detail di Card */
+.btn-view-detail {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+.btn-view-detail:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.btn-view-detail:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+/* Success Toast */
+.alert-success {
+    border-radius: 0.75rem;
+    border: none;
+    box-shadow: 0 4px 12px rgba(25, 135, 84, 0.15);
+    animation: slideInRight 0.4s ease-out;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Smooth scroll inside modal */
+#detailObatModal .modal-body {
+    scroll-behavior: smooth;
+}
